@@ -98,3 +98,5 @@ taskid/
 ## 📝 Licença
 
 Livre para uso pessoal.
+
+Ronaldo
