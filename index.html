@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskAid</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="app">
+  <aside class="sidebar">
+    <h1>TaskAid</h1>
+
+    <button data-module="tasks">Tarefas</button>
+    <button data-module="studies">Estudos</button>
+    <button data-module="expenses">Gastos</button>
+    <button data-module="checklists">Checklists</button>
+  </aside>
+
+  <main id="content">
+    <p>Selecione um módulo</p>
+  </main>
+</div>
+
+<script src="./js/app.js"></script>
+
 </body>
 </html>
