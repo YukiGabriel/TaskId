@@ -1,45 +1,111 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.app {
-  display: flex;
-  height: 100vh;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.sidebar {
-  width: 220px;
-  background-color: #1f2933;
-  color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.concluida {
+    text-decoration: line-through;
+    color: white;
 }
 
-.sidebar h1 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  text-align: center;
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background-color: gray;
+    text-align: center;
+    
+    user-select: none;      
+    color: white;
 }
 
-.sidebar button {
+h1 {
+    font-family: Arial, sans-serif;
+    color: #96D4D4;
+    font-weight: 600;
+}
+
+#mensagem-erro {
+  animation: fadeIn 0.5s ease;
+  display: none;
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
   padding: 10px;
-  background: #374151;
-  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+#input {
+  margin: 30px;
+  background: white;
   border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px #96D4D4;
+  color: #96D4D4;
+}
+#input::placeholder {
+  color: #96D4D4;
+}
+
+#btn {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  background: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px #96D4D4;
+  color: #96D4D4;
   cursor: pointer;
-  border-radius: 4px;
 }
 
-.sidebar button:hover {
-  background: #4b5563;
+#btn:hover {
+  background-color: #e0e0e0;
 }
 
-main {
-  flex: 1;
-  padding: 20px;
+#btn:active {
+  transform: scale(0.95);
 }
+
+.head th{
+    background-color: #96D4D4;
+    border: 2px solid black;
+}
+
+.body li  {
+  animation: fadeUp 0.3s ease;
+  margin-bottom: 5px;
+  border-collapse: collapse;
+  color: #96D4D4;
+}
+
+.body {
+    background-color: white;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+

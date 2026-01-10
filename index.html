@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TaskAid</title>
+<html lang="pt-BR">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="app">
-  <aside class="sidebar">
-    <h1>TaskAid</h1>
+        <meta charset="UTF-8">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        
+        <header class="header">
+        <h1>Tarefas</h1>
+        </header>
 
-    <button data-module="tasks">Tarefas</button>
-    <button data-module="studies">Estudos</button>
-    <button data-module="expenses">Gastos</button>
-    <button data-module="checklists">Checklists</button>
-  </aside>
+        <form id="form">
+            <div id="mensagem-erro"></div>
+            <input placeholder="Nova tarefa" id="input" name="text" type="text">
+            <button id="btn" type="submit">Adicionar</button>    
+            
+        </form>
 
-  <main id="content">
-    <p>Selecione um módulo</p>
-  </main>
-</div>
+       <table style="width: 100%;">
+            <tr class="head">
+                <th style="width: 80%;">Lista</th>
+            </tr>
+            <tr class="body">
+                <td id="lista"></td>
+            </tr>
+       </table>
 
-<script src="./js/app.js"></script>
-
-</body>
+        <script src="js/tasks.js"></script>
+    </body>
 </html>
