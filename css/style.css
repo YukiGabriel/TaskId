@@ -25,7 +25,7 @@
 
 body {
     font-family: "Inter", system-ui, sans-serif;
-    background-color: gray;
+    background-color: rgb(61, 60, 60);
     text-align: center;
     
     user-select: none;      
@@ -101,7 +101,7 @@ h1 {
 }
 
 .body {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 table {
